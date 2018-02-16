@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="http://cdn.muicss.com/mui-0.9.35/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://cdn.muicss.com/mui-0.9.35/js/mui.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Filters</title>
+
+    <script src="./tracking/tracking-min.js"></script>
+    <script src="./tracking/data/face-min.js"></script>
+  </head>
+<body>  
+    <div class="mui-appbar">
+        <table width="100%">
+          <tr style="vertical-align:middle;">
+            <td class="mui--appbar-height" align="center"><h2>FilterGram</h2></td>
+          </tr>
+        </table>
+      </div>
+    <div class="container">
+
+    <div class="buttons">
+        <button class="mui-btn mui-btn--raised" id="dog-face">dog face 🐶</button>
+        <button class="mui-btn mui-btn--raised" id="unicorn-spike">unicorn 🦄</button>
+        <button class="mui-btn mui-btn--raised" id="big-eyes">big eyes 👀</button>
+        <button class="mui-btn mui-btn--raised"id="mouth-rainbow">🌈 rainbow tongue👅</button>  
+    </div>
+        
+    <div class="webcam">
+      <video id="video" width="500" height="375" preload autoplay loop muted></video>
+      <canvas id="canvas" width="500" height="375"></canvas>     
+    </div>  
+  </div>
+
+  <script src="script.js"></script>    
+</body>
+</html>
